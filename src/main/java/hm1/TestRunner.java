@@ -1,10 +1,12 @@
-import annotations.AfterSuite;
-import annotations.AfterTest;
-import annotations.BeforeSuite;
-import annotations.BeforeTest;
-import annotations.Test;
-import context.TestClassContext;
-import context.TestMethod;
+package hm1;
+
+import hm1.annotations.AfterSuite;
+import hm1.annotations.AfterTest;
+import hm1.annotations.BeforeSuite;
+import hm1.annotations.BeforeTest;
+import hm1.annotations.Test;
+import hm1.context.TestClassContext;
+import hm1.context.TestMethod;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;

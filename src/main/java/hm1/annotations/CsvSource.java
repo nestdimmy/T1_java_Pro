@@ -1,4 +1,4 @@
-package annotations;
+package hm1.annotations;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

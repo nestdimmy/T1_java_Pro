@@ -1,7 +1,7 @@
-package context;
+package hm1.context;
 
-import annotations.CsvSource;
-import annotations.Test;
+import hm1.annotations.CsvSource;
+import hm1.annotations.Test;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;

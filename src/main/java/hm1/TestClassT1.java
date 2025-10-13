@@ -1,9 +1,11 @@
-import annotations.AfterSuite;
-import annotations.AfterTest;
-import annotations.BeforeSuite;
-import annotations.BeforeTest;
-import annotations.CsvSource;
-import annotations.Test;
+package hm1;
+
+import hm1.annotations.AfterSuite;
+import hm1.annotations.AfterTest;
+import hm1.annotations.BeforeSuite;
+import hm1.annotations.BeforeTest;
+import hm1.annotations.CsvSource;
+import hm1.annotations.Test;
 
 public class TestClassT1 {
 
