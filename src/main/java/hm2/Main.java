@@ -12,16 +12,6 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class Main {
-    /*
-    · Найдите в списке целых чисел 3-е наибольшее «уникальное» число (пример: 5 2 10 9 4 3 10 1 13 => 9, в отличие от прошлой задачи здесь разные 10 считает за одно число)
-    ·
-    ·
-    · Найдите в списке слов самое длинное
-    · Имеется строка с набором слов в нижнем регистре, разделенных пробелом. Постройте хеш-мапы, в которой будут хранится пары: слово - сколько раз оно встречается во входной строке
-    · Отпечатайте в консоль строки из списка в порядке увеличения длины слова, если слова имеют одинаковую длины, то должен быть сохранен алфавитный порядок
-      Имеется массив строк, в каждой из которых лежит набор из 5 слов, разделенных пробелом, найдите среди всех слов самое длинное, если таких слов несколько, получите любое из них
-         */
-
     private static final List<Employee> employeeData = List.of(
             new Employee("Тест", 41, "Инженер"),
             new Employee("Тест1", 28, "не Инженер"),
@@ -32,11 +22,9 @@ public class Main {
     );
 
     private static Predicate<Employee> isEngineer = emp -> "Инженер".equals(emp.position());
-
     private static List<String> wordsData = List.of("1", "12", "123", "1234", "12345");
     private static List<String> wordsTaskSevenData = List.of("a", "b", "cw", "ca", "cd", "d", "e");
     private static List<String> wordsTaskEightData = List.of("123 321 33", "acas ascasc csacascasc", "ccccc cc", "a", "2123faw awcawcawcawc");
-
     private static String mapsData = "hello test testss test ssss testsss sss tests test hello";
 
     public static void main(String[] args) {
@@ -49,8 +37,6 @@ public class Main {
         runTaskSeven(wordsTaskSevenData);
         runTaskEight(wordsTaskEightData);
     }
-
-
 
     private static void runTaskOne() {
         ArrayList<Integer> testData = new ArrayList<>(List.of(5, 2, 10, 9, 4, 3, 10, 1, 13));
