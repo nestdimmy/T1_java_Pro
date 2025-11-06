@@ -42,7 +42,7 @@ public class Main {
         ArrayList<Integer> testData = new ArrayList<>(List.of(5, 2, 10, 9, 4, 3, 10, 1, 13));
         System.out.println("Найдите в списке целых чисел 3-е наибольшее число");
         Integer thirdValue = testData.stream()
-                .sorted(Integer::compareTo)
+                .sorted(Comparator.reverseOrder())
                 .skip(2)
                 .findFirst()
                 .orElseThrow(() -> new IllegalArgumentException("Неверные входные данные"));
@@ -54,7 +54,7 @@ public class Main {
         System.out.println("Найдите в списке целых чисел 3-е наибольшее «уникальное» число");
         Integer thirdValue = testData.stream()
                 .distinct()
-                .sorted(Integer::compareTo)
+                .sorted(Comparator.reverseOrder())
                 .skip(2)
                 .findFirst()
                 .orElseThrow(() -> new IllegalArgumentException("Неверные входные данные"));
