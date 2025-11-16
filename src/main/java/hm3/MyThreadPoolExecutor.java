@@ -9,7 +9,7 @@ public class MyThreadPoolExecutor {
     private final List<Thread> workers;
     private final LinkedList<Runnable> queue = new LinkedList<>();
 
-    private Boolean isActive = true;
+    private volatile Boolean isActive = true;
 
     public MyThreadPoolExecutor(int poolSize) {
         this.workers = new ArrayList<>();
