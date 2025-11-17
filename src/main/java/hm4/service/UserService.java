@@ -2,7 +2,9 @@ package hm4.service;
 
 import hm4.dao.UserDao;
 import hm4.model.User;
+import org.springframework.stereotype.Service;
 
+@Service
 public class UserService {
 
     private final UserDao userDao;
