@@ -47,6 +47,10 @@ public class Department {
     }
 
     public String toString() {
-        return "Department{" + "\"id\": " + this.getId() + ", \"name\": \"" + this.getName() + "\"}";
+        return "Department{"
+                + "\"id\": " + this.getId() +
+                ", \"name\": \"" + this.getName() +
+                ", \"users\": \"" + this.getUsers() +
+                "\"}";
     }
 }
