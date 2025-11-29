@@ -28,10 +28,6 @@ public class CustomCommandLinerRunner implements CommandLineRunner {
             log.info("Пользователь с именем Вася уже существует");
         }
 
-//        log.info("Without graph");
-//        departmentRepository.findAll()
-//                .forEach(dep -> log.info(dep.toString()));
-
         log.info("With graph");
         departmentRepository.findAllWithUsers()
                 .forEach(dep -> log.info(dep.toString()));
