@@ -1,5 +1,6 @@
 package user_management.service;
 
+import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import user_management.dao.ProductRepository;
@@ -24,7 +25,7 @@ public class ProductService {
         result.setNumber(request.getNumber());
 
         User user = userRepository.findById(request.getUserId())
-                .orElseThrow(() -> new RuntimeException("Пользователь не найден"));
+                .orElseThrow(() -> new EntityNotFoundException("Пользователь не найден"));
 
         result.setUser(user);
 
@@ -37,6 +38,6 @@ public class ProductService {
 
     public Product findById(Long id) {
         return productRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Продукт не найден"));
+                .orElseThrow(() -> new EntityNotFoundException("Продукт не найден"));
     }
 }
