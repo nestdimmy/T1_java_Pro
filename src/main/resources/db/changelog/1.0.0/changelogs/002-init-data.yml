@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: '002-init-data'
+      author: danesterov
+      changes:
+        - sqlFile:
+            relativeToChangelogFile: true
+            path: sql/init_data.sql
+            splitStatements: true

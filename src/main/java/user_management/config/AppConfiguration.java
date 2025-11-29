@@ -1,16 +1,14 @@
-package hm4.config;
+package user_management.config;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
 
-@Configuration
+//@Configuration
 public class AppConfiguration {
 
-    @Bean
+  //  @Bean
     public DataSource dataSource(DbProps dbProps) {
         HikariConfig config = new HikariConfig();
         config.setJdbcUrl(dbProps.getHost());

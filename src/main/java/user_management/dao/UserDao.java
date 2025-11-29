@@ -1,7 +1,6 @@
-package hm4.dao;
+package user_management.dao;
 
-import hm4.model.User;
-import org.springframework.stereotype.Repository;
+import user_management.model.User;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -11,7 +10,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Optional;
 
-@Repository
+//@Repository
+@Deprecated
 public class UserDao {
 
     private final DataSource dataSource;
