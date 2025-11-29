@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: '001-init-tables'
+      author: danesterov
+      changes:
+        - sqlFile:
+            relativeToChangelogFile: true
+            path: sql/init_tables.sql
+            splitStatements: true
