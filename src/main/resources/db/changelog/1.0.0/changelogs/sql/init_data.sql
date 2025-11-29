@@ -1,4 +1,4 @@
-INSERT INTO department(id, name)
+INSERT INTO departments(id, name)
 VALUES
     (1, 'Деп'),
     (2, 'Деп2'),

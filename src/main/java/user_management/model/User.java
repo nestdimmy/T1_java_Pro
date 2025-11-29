@@ -7,11 +7,14 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.Set;
 
 @Getter
 @Setter
@@ -33,11 +36,17 @@ public class User {
     @JoinColumn(name = "department_id")
     private Department department;
 
+    @OneToMany(mappedBy = "user")
+    private Set<Product> products;
+
     public User(String name) {
         this.name = name;
     }
 
     public String toString() {
-        return "User{" + "\"id\": " + this.getId() + ", \"name\": \"" + this.getName() + "\"}";
+        return "User{" +
+                "\"id\": " + this.getId() +
+                ", \"name\": \"" + this.getName() +
+                "\"}";
     }
 }

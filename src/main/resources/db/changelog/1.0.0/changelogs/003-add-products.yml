@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: '003-add-products'
+      author: danesterov
+      changes:
+        - sqlFile:
+            relativeToChangelogFile: true
+            path: sql/add_products.sql
+            splitStatements: true

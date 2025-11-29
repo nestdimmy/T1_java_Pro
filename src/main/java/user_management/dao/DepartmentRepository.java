@@ -9,7 +9,6 @@ import java.util.Set;
 
 public interface DepartmentRepository extends JpaRepository<Department, Long> {
 
-    //@EntityGraph("dep.with-users")
     @EntityGraph(attributePaths = "users")
     @Query("SELECT d from Department d")
     Set<Department> findAllWithUsers();
