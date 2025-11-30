@@ -6,3 +6,6 @@ databaseChangeLog:
   - include:
       relativeToChangelogFile: true
       file: changelogs/002-init-data.yml
+  - include:
+      relativeToChangelogFile: true
+      file: changelogs/003-add-products.yml
